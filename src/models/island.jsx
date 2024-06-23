@@ -81,7 +81,6 @@ const island = ({isRotating, setIsRotating,currentStage,setCurrentStage, ...prop
     canvas.addEventListener("pointermove", handlePointerMove);
     document.addEventListener("keydown", handleKeyDown);
     document.addEventListener("keyup", handleKeyUp);
-    document.addEventListener("", handleScroll);
 
     
     return () => {
