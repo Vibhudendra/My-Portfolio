@@ -26,37 +26,50 @@ const Contact = () => {
     setCurrentAnimation("hit");
 
    
-    emailjs.init(import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY);
     emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: "Vibhudendra",
-          from_email: form.email,
-          to_email: "vibhudendra.s@gmail.com",
-          message: form.message,
-        },
-        
-      )
-      .then(() => {
-        setIsLoading(false);
-        showAlert({ show: true, text: 'Message sent successfully', type: 'Success' })
+    .send(
+      import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+      {
+        from_name: form.name,
+        to_name: "vibhudendra S",
+        from_email: form.email,
+        to_email: "vibhudendra.s@gmail.com",
+        message: form.message,
+      },
+      import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+    )
+    .then(
+      () => {
+        setLoading(false);
+        showAlert({
+          show: true,
+          text: "Thank you for your message 😃",
+          type: "success",
+        });
 
         setTimeout(() => {
-          hideAlert();
+          hideAlert(false);
           setCurrentAnimation("idle");
-          setForm({ name: "", email: "", message: "" });
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
         }, [3000]);
-      })
-      .catch((error) => {
-        setIsLoading(false);
+      },
+      (error) => {
+        setLoading(false);
+        console.error(error);
         setCurrentAnimation("idle");
-        console.log(error);
-        showAlert({ show: true, text: 'I didnt receive your message', type: 'danger' })
-        
-      });
+
+        showAlert({
+          show: true,
+          text: "I didn't receive your message 😢",
+          type: "danger",
+        });
+      }
+    );
   };
   
   return (
