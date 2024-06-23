@@ -41,7 +41,7 @@ const Contact = () => {
     )
     .then(
       () => {
-        setLoading(false);
+        setIsLoading(false);
         showAlert({
           show: true,
           text: "Thank you for your message 😃",
@@ -59,7 +59,7 @@ const Contact = () => {
         }, [3000]);
       },
       (error) => {
-        setLoading(false);
+        setIsLoading(false);
         console.error(error);
         setCurrentAnimation("idle");
 
