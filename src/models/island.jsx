@@ -29,7 +29,7 @@ const island = ({isRotating, setIsRotating,currentStage,setCurrentStage, ...prop
     e.preventDefault();
     setIsRotating(true);
 
-    const clientX = event.touches ? event.touches[0].clientX : event.clientX;
+    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
 
     lastX.current = clientX;
   };
@@ -81,6 +81,8 @@ const island = ({isRotating, setIsRotating,currentStage,setCurrentStage, ...prop
     canvas.addEventListener("pointermove", handlePointerMove);
     document.addEventListener("keydown", handleKeyDown);
     document.addEventListener("keyup", handleKeyUp);
+    document.addEventListener("", handleScroll);
+
     
     return () => {
       canvas.removeEventListener("pointerdown", handlePointerDown);
