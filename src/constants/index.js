@@ -9,7 +9,7 @@ import {
     github,
     html,
     javascript,
-    linkedin,
+    // linkedin,
     mongodb,
     motion,
     mui,
@@ -136,19 +136,19 @@ export const experiences = [
 export const socialLinks = [
     {
         name: 'Contact',
-        iconUrl: contact,
+        icon: contact,
         link: '/contact',
     },
     {
         name: 'GitHub',
-        iconUrl: github,
+        icon: github,
         link: 'https://github.com/Vibhudendra',
     },
-    {
-        name: 'LinkedIn',
-        iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/vibhudendras/',
-    }
+    // {
+    //     name: 'LinkedIn',
+    //     // iconUrl: linkedin,
+    //     link: 'https://www.linkedin.com/in/vibhudendras/',
+    // }
 ];
 
 export const projects = [

@@ -5,6 +5,9 @@ import Fox from "../models/Fox";
 import Loader from "../components/Loader";
 import useAlert from "../hooks/useAlert";
 import Alert from "../components/Alert";
+import { socialLinks } from "../constants";
+import { Link } from "react-router-dom";
+
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -25,7 +28,7 @@ const Contact = () => {
     setIsLoading(true);
     setCurrentAnimation("hit");
 
-   
+   emailjs.init(import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY)
     emailjs
     .send(
       import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
