@@ -31,6 +31,9 @@ const Contact = () => {
   //  emailjs.init('TgFd5QJXMZkjrHyN9','service_q14tpir','template_xu83s9k')
     emailjs
     .send(
+      // console.log('Service ID:', import.meta.env.VITE_APP_EMAILJS_SERVICE_ID),
+      // console.log('Template ID:', import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID),
+      // console.log('Public Key:', import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY),
       import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
       import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
       {
