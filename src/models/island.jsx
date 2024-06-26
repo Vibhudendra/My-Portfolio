@@ -8,7 +8,7 @@ Title: Fox's islands
 */
 
 import  { useRef , useEffect } from 'react'
-import { useGLTF } from '@react-three/drei'
+import { useGLTF, OrbitControls, Preload } from '@react-three/drei'
 import { useFrame, useThree } from '@react-three/fiber'
 import { a } from '@react-spring/three'
 

@@ -3,6 +3,7 @@
 import { Suspense, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import Loader from "../components/Loader";
+import { useGLTF, OrbitControls, Preload } from '@react-three/drei'
 
 import Island from "../models/island";
 import Sky from "../models/Sky";
@@ -57,7 +58,7 @@ const Home = () => {
   return (
     <section className="w-full h-screen relative">
       <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
-        {currentStage &&  <HomeInfo currentStage={currentStage} />}
+        {currentStage && <HomeInfo currentStage={currentStage} />}
       </div>
 
       <Canvas
@@ -76,9 +77,7 @@ const Home = () => {
           />
 
           <Bird />
-          <Sky 
-          isRotating={isRotating}
-           />
+          <Sky isRotating={isRotating} />
           <Island
             position={islandPosition}
             scale={islandScale}
@@ -87,12 +86,18 @@ const Home = () => {
             setIsRotating={setIsRotating}
             setCurrentStage={setCurrentStage}
           />
+          <OrbitControls
+            enableZoom={false}
+            enableDamping={false}
+            enablePan={false}
+          />
           <Plane
             isRotating={isRotating}
             scale={planeScale}
             position={planePosition}
             rotation={[0, 20, 0]}
           />
+          {/* <Preload all /> */}
         </Suspense>
       </Canvas>
     </section>
