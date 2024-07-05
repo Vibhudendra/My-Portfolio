@@ -27,6 +27,7 @@ import contact from './contact.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
 import Zustand from './Zustand.png'
+import apple from './apple.png'
 
 export {
     css,
@@ -55,5 +56,6 @@ export {
     contact,
     soundon,
     soundoff,
-    Zustand
+    Zustand,
+    apple,
 }

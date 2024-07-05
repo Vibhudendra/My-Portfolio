@@ -45,17 +45,32 @@ const Projects = () => {
               </p>
               <div className="mt-5">
                 <Link 
-                to={project.link}
+                to={project.Livelink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-semibold text-white"
                 >
+                  <div className="flex gap-4">
                   <button
                   type="button"
-                  className="w-full p-2 rounded-xl bg-blue-500 drop"
+                  className="w-1/2 p-2 rounded-xl bg-blue-500 drop"
                   >
                     View
                   </button>
+                  <Link
+                  to={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-1/2 p-2 rounded-xl underline text-black items-center justify-center"
+                  >
+                  <button
+                  type="button"
+                  >
+                    Source
+                  </button>
+                  </Link>
+                  </div>
+                  
                 </Link>
                 {/* <img
                 src={arrow}

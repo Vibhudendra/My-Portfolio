@@ -24,8 +24,10 @@ import {
     tailwindcss,
     threads,
     Zustand,
-    typescript
+    typescript,
+    apple,
 } from "../assets/icons";
+import { Link } from "react-router-dom";
 
 export const skills = [
     {
@@ -158,6 +160,7 @@ export const projects = [
         name: 'Car Finding App',
         description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
         link: 'https://github.com/Vibhudendra/cars_showcase',
+        Livelink : 'https://cars-showcase-five-hazel.vercel.app/',
     },
     {
         iconUrl: estate,
@@ -165,6 +168,7 @@ export const projects = [
         name: 'Real-Estate Application',
         description: 'Designed and built a Realestates website for finding reliable homes on the market, Simplifying the property purchase and rent process',
         link: 'https://github.com/Vibhudendra/Homes-RealEstate',
+        Livelink : 'https://homes-real-estate.vercel.app/',
     },
     {
         iconUrl: summiz,
@@ -172,12 +176,22 @@ export const projects = [
         name: 'Portfolio ',
         description: 'Designed and built portfolio website that showcases projects, skills and experience.',
         link: 'https://github.com/Vibhudendra/Portfolio',
+        Livelink : 'three-dusk-11.vercel.app',
     },
     {
         iconUrl: summiz,
         theme: 'btn-back-yellow',
         name: 'AI Summarizer Application',
         description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'InProgress'
+        link: 'InProgress',
+        Livelink : '',
+    },
+    {
+        iconUrl: apple,
+        theme: 'btn-back-black',
+        name: 'Apple Website',
+        description: 'A website that resembles the apple product page, that showcases the 3D render of the actual product, built using three JS and GSAP and also integrated sentry to monitor the web-vitals.',
+        link: 'https://github.com/Vibhudendra/Apple',
+        Livelink : 'https://apple-e.vercel.app/',
     }
 ];
