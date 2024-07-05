@@ -164,7 +164,7 @@ export const projects = [
     },
     {
         iconUrl: estate,
-        theme: 'btn-back-yellow',
+        theme: 'btn-back-green',
         name: 'Real-Estate Application',
         description: 'Designed and built a Realestates website for finding reliable homes on the market, Simplifying the property purchase and rent process',
         link: 'https://github.com/Vibhudendra/Homes-RealEstate',

@@ -28,6 +28,9 @@ import soundon from './soundon.png'
 import soundoff from './soundoff.png'
 import Zustand from './Zustand.png'
 import apple from './apple.png'
+import home from './home.png'
+import cv from './cv.png'
+
 
 export {
     css,
@@ -58,4 +61,6 @@ export {
     soundoff,
     Zustand,
     apple,
+    home,
+    cv
 }
