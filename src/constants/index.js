@@ -176,7 +176,7 @@ export const projects = [
         name: 'Portfolio ',
         description: 'Designed and built portfolio website that showcases projects, skills and experience.',
         link: 'https://github.com/Vibhudendra/Portfolio',
-        Livelink : 'three-dusk-11.vercel.app',
+        Livelink :'https://three-dusk-11.vercel.app',
     },
     {
         iconUrl: summiz,
