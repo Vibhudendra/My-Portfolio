@@ -4,7 +4,6 @@ import { Suspense, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import Loader from "../components/Loader";
 import { useGLTF, OrbitControls, Preload } from '@react-three/drei'
-
 import Island from "../models/island";
 import Sky from "../models/Sky";
 import Bird from "../models/Bird";

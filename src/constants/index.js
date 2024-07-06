@@ -183,8 +183,8 @@ export const projects = [
         theme: 'btn-back-yellow',
         name: 'AI Summarizer Application',
         description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'InProgress',
-        Livelink : '',
+        link: 'https://github.com/Vibhudendra/Sumarify---AI-Summarizer',
+        Livelink : 'https://sumarify.vercel.app/',
     },
     {
         iconUrl: apple,
